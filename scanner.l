@@ -5,7 +5,6 @@
 #include <limits.h>
 
 #include "table.h"
-#include "y.tab.h"
 table_t* constant_table;
 
 int start = 0;
