@@ -20,7 +20,8 @@ enum keywords
   BREAK,
   CONTINUE,
   VOID,
-  ENUM
+  ENUM,
+  SWITCH
 };
 
 enum IDENTIFIER
@@ -35,7 +36,8 @@ enum constants
   DECIMALCONSTANT,
   CHARCONSTANT,
   STR,
-  HEADERFILE
+  HEADERFILE,
+  MACRO
 };
 
 enum operators
