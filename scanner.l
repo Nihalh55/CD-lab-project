@@ -16,17 +16,15 @@ IDENTIFIER_C        (_|{LETTER})({LETTER}|{DIGIT}|_)*
 HEX                 [0-9a-f]
 
 %x COMMENT
+%x PREPROCESSOR
 
 %%
 \n                                                                                                      {yylineno++;}
 
 "#include"                                                                                              {BEGIN(PREPROCESSOR);}
 <PREPROCESSOR>({WS})?"<"({LETTER})*".h>"                                                                {printf("%-40s - HEADER FILE - %d\n",yytext,HEADERFILE); BEGIN(INITIAL);}
-<PREPROCESSOR>"#include"({WS})?"\""({LETTER})*".h\""                                                    {printf("%-40s - HEADER FILE - %d\n",yytext,HEADERFILE); BEGIN(INITIAL);}
-<PREPROCESSOR>"#define"({WS})""({LETTER})""({LETTER}|{DIGIT})*""({WS})""({DIGIT})+""                    {printf("%-40s - MACRO - %d\n",yytext,MACRO); BEGIN(INITIAL);}
-<PREPROCESSOR>"#define"({WS})""({LETTER}({LETTER}|{DIGIT})*)""({WS})""(({DIGIT}+)\.({DIGIT}+))""        {printf("%-40s - MACRO - %d\n",yytext,MACRO); BEGIN(INITIAL);}
-<PREPROCESSOR>"#define"({WS})""({LETTER}({LETTER}|{DIGIT})*)""({WS})""({LETTER}({LETTER}|{DIGIT})*)""   {printf("%-40s - MACRO - %d\n",yytext,MACRO); BEGIN(INITIAL);}
-<PREPROCESSOR>.                                                                                         {printf("ERROR AT %d: ILLEGAL FORMAT \n", yylineno); BEGIN(INITIAL)}
+<PREPROCESSOR>({WS})?"\""({LETTER})*".h\""                                                              {printf("%-40s - HEADER FILE - %d\n",yytext,HEADERFILE); BEGIN(INITIAL);}
+<PREPROCESSOR>.                                                                                         {printf("ERROR AT %d: ILLEGAL HEADER FORMAT \n", yylineno); BEGIN(INITIAL);}
 
 "int"                                                                                                   {printf("%-40s - KEYWORD - %d\n",yytext,INT);}
 "char"                                                                                                  {printf("%-40s - KEYWORD - %d\n",yytext,CHAR);}
