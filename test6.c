@@ -33,6 +33,6 @@ int main()
   total = x + y;
   diff = x - y;
   int rem = x % y;
-  printf ("Total = %d \n", total);
+  printf ("Total=%d \n", total);
 }
 

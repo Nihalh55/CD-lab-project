@@ -18,5 +18,5 @@ int main()
   short int b;
   int x, 9y, total$;
   total = x @ y;
-  printf ("Total = %d \n \" ", total);
+  printf ("Total= %d\n \"", total);
 }
