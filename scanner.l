@@ -175,7 +175,7 @@ HEX                 [0-9a-f]
 int yywrap(){}
 int main(){
     int newtoken;
-    yyin = fopen("test6.c","r");
+    yyin = fopen("test1.c","r");
     yylex();
     display();
     return 0;
