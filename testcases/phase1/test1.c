@@ -3,14 +3,14 @@
 */
 
 /*This should not*/ work */
-#include<stdio
-.h>
+/*#include<stdio
+.h>*/
 #include<string.h>
 
 int main() {
 
     int a = 5;
-    char aString[10] = "Hello 
+    char aString[10] = "Hello
         World";
     @$
     char zy = 'ab';
