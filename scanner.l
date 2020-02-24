@@ -36,7 +36,7 @@ HEX                 [0-9a-f]
 "float"                           {return FLOAT;}
 "void"                            {return VOID;}
 "long"                            {return LONG;}
-"long long"                       {return LONG_LONG;}
+"long long"                       {return LONGLONG;}
 "short"                           {return SHORT;}
 "signed"                          {return SIGNED;}
 "unsigned"                        {return UNSIGNED;}
@@ -71,31 +71,30 @@ HEX                 [0-9a-f]
 {WS}                                                    ;
 
 
-[+\-]?[0][x|X]{HEX}+[lLuU]?                             { yylval.node = insert(constant_table,yytext,(int)strtol(yytext, NULL, 16),INT, -1, -1); return  HEX_CONSTANT;}
-[+\-]?{DIGIT}+[lLuU]?                                   { yylval.node = insert(constant_table,yytext,atoi(yytext),INT, -1, -1); return  DEC_CONSTANT;}
-[+\-]?{DIGIT}+\.{DIGIT}+([eE][-+]?[0-9]+)?              { yylval.node = insert(constant_table,yytext,atof(yytext),FLOAT, -1, -1); return FLOAT_CONSTANT;}
+[+\-]?[0][x|X]{HEX}+[lLuU]?                             { insert(constant_table,yytext,(int)strtol(yytext, NULL, 16),INT, -1, -1); return  HEXCONSTANT;}
+[+\-]?{DIGIT}+[lLuU]?                                   { insert(constant_table,yytext,atoi(yytext),INT, -1, -1); return  DECIMALCONSTANT;}
+[+\-]?{DIGIT}+\.{DIGIT}+([eE][-+]?[0-9]+)?              { insert(constant_table,yytext,atof(yytext),FLOAT, -1, -1); return FLOATCONSTANT;}
 
 
 \"[^\n|^\"]*[\n]                                        {printf("%-40s - ERROR: UNTERMINATED STRINGn", yytext);}
-\"[^\n]*\"                                              {insert(constant_table,yytext,INT_MAX,STRING,-1, -1); return STRING;}
+\"[^\n]*\"                                              {insert(constant_table,yytext,INT_MAX,STR,-1, -1); return STR;}
 \'({LETTER}|{DIGIT})({LETTER}|{DIGIT})+\'               {printf("%-40s - ERROR: UNTERMINATED CHAR\n", yytext);}
-\'.\'                                                   {yylval.node = insert(constant_table,yytext,yytext[1],CHAR, -1, -1); return CHAR_CONSTANT;}
+\'.\'                                                   {insert(constant_table,yytext,yytext[1],CHAR, -1, -1); return CHARCONSTANT;}
 
 "--"			                {return DECREMENT;}
 "++"			                {return INCREMENT;}
-"+="                      {return ADD_ASSIGN;}
-"-="                      {return SUB_ASSIGN;}
-"*="                      {return MUL_ASSIGN;}
-"/="                      {return DIV_ASSIGN;}
-"%="                      {return MOD_ASSIGN;}
+"+="                      {return ADDASSIGN;}
+"-="                      {return SUBTRACTASSIGN;}
+"*="                      {return MULASSIGN;}
+"%="                      {return MODASSIGN;}
 
 
-"&&"			                {return LOGICAL_AND;}
-"||"			                {return LOGICAL_OR;}
-"<="			                {return LS_EQ;}
-">="			                {return GR_EQ;}
-"=="			                {return EQ;}
-"!="		                  {return NOT_EQ;}
+"&&"			                {return LOGICALAND;}
+"||"			                {return LOGICALOR;}
+"<="			                {return LESSEREQUAL;}
+">="			                {return GREATEREQUAL;}
+"=="			                {return EQUAL;}
+"!="		                  {return NOTEQUAL;}
 
 .                         {return yytext[0];}
 
