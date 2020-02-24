@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75bec6c4-470b-4331-ba7f-f710f8352bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test4.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test5.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test6.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test7.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test8.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test9.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out.dSYM/Contents/Resources/DWARF/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579074433172</updated>
-      <workItem from="1582464878076" duration="9419000" />
+      <workItem from="1582464878076" duration="11585000" />
     </task>
     <servers />
   </component>

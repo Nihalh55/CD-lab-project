@@ -29,15 +29,6 @@ int getNum(char ch)
     return num;
 }
 
-//function : hex2int
-//this function will return integer value against
-//hexValue - which is in string format
-
-unsigned int hex2int(unsigned char hex[])
-{
-    unsigned int x=0;
-    x=(getNum(hex[0]))*16+(getNum(hex[1]));
-}
 int main()
 {
     unsigned char hexValue[2]="9A";
