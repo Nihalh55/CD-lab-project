@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75bec6c4-470b-4331-ba7f-f710f8352bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deprecated/scanner.l" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lexical Analyzer Report - 2020.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Lexical Analyzer Report - 2020.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lex.yy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scanner.l" beforeDir="false" afterPath="$PROJECT_DIR$/scanner.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test4.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test5.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test5.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test6.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test7.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test8.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test8.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579074433172</updated>
-      <workItem from="1582464878076" duration="1963000" />
+      <workItem from="1582464878076" duration="2293000" />
     </task>
     <servers />
   </component>
