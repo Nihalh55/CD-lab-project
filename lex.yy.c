@@ -1059,17 +1059,17 @@ YY_RULE_SETUP
 case 32:
 YY_RULE_SETUP
 #line 74 "scanner.l"
-{ insert(constant_table,yytext,(int)strtol(yytext, NULL, 16),INT, -1, -1); return  HEXCONSTANT;}
+{ insert(constant_table,yytext,(int)strtol(yytext, NULL, 16),INT); return  HEXCONSTANT;}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
 #line 75 "scanner.l"
-{ insert(constant_table,yytext,atoi(yytext),INT, -1, -1); return  DECIMALCONSTANT;}
+{ insert(constant_table,yytext,atoi(yytext),INT); return  DECIMALCONSTANT;}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
 #line 76 "scanner.l"
-{ insert(constant_table,yytext,atof(yytext),FLOAT, -1, -1); return FLOATCONSTANT;}
+{ insert(constant_table,yytext,atof(yytext),FLOAT); return FLOATCONSTANT;}
 	YY_BREAK
 case 35:
 /* rule 35 can match eol */
@@ -1080,7 +1080,7 @@ YY_RULE_SETUP
 case 36:
 YY_RULE_SETUP
 #line 80 "scanner.l"
-{insert(constant_table,yytext,INT_MAX,STR,-1, -1); return STR;}
+{insert(constant_table,yytext,INT_MAX,STR); return STR;}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
@@ -1090,7 +1090,7 @@ YY_RULE_SETUP
 case 38:
 YY_RULE_SETUP
 #line 82 "scanner.l"
-{insert(constant_table,yytext,yytext[1],CHAR, -1, -1); return CHARCONSTANT;}
+{insert(constant_table,yytext,yytext[1],CHAR); return CHARCONSTANT;}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP

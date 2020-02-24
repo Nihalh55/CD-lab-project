@@ -71,15 +71,15 @@ HEX                 [0-9a-f]
 {WS}                                                    ;
 
 
-[+\-]?[0][x|X]{HEX}+[lLuU]?                             { insert(constant_table,yytext,(int)strtol(yytext, NULL, 16),INT, -1, -1); return  HEXCONSTANT;}
-[+\-]?{DIGIT}+[lLuU]?                                   { insert(constant_table,yytext,atoi(yytext),INT, -1, -1); return  DECIMALCONSTANT;}
-[+\-]?{DIGIT}+\.{DIGIT}+([eE][-+]?[0-9]+)?              { insert(constant_table,yytext,atof(yytext),FLOAT, -1, -1); return FLOATCONSTANT;}
+[+\-]?[0][x|X]{HEX}+[lLuU]?                             { insert(constant_table,yytext,(int)strtol(yytext, NULL, 16),INT); return  HEXCONSTANT;}
+[+\-]?{DIGIT}+[lLuU]?                                   { insert(constant_table,yytext,atoi(yytext),INT); return  DECIMALCONSTANT;}
+[+\-]?{DIGIT}+\.{DIGIT}+([eE][-+]?[0-9]+)?              { insert(constant_table,yytext,atof(yytext),FLOAT); return FLOATCONSTANT;}
 
 
 \"[^\n|^\"]*[\n]                                        {printf("%-40s - ERROR: UNTERMINATED STRINGn", yytext);}
-\"[^\n]*\"                                              {insert(constant_table,yytext,INT_MAX,STR,-1, -1); return STR;}
+\"[^\n]*\"                                              {insert(constant_table,yytext,INT_MAX,STR); return STR;}
 \'({LETTER}|{DIGIT})({LETTER}|{DIGIT})+\'               {printf("%-40s - ERROR: UNTERMINATED CHAR\n", yytext);}
-\'.\'                                                   {insert(constant_table,yytext,yytext[1],CHAR, -1, -1); return CHARCONSTANT;}
+\'.\'                                                   {insert(constant_table,yytext,yytext[1],CHAR); return CHARCONSTANT;}
 
 "--"			                {return DECREMENT;}
 "++"			                {return INCREMENT;}

@@ -16,9 +16,9 @@
 
 %}
 
-%union
-{
-    char* node;
+%union {
+    int data_type;
+    char* str;
 }
 
 %token <str> IDENTIFIER HEADERFILE
@@ -45,7 +45,6 @@
 %nonassoc UNARY
 
 %start start
-%glr-parser
 
 %%
 
@@ -85,7 +84,7 @@ sign
     | UNSIGNED
     ;
 
-type_specifier 
+type_specifier
     : INT                       {current = INT; strcpy(type,"int");}
     | CHAR                      {current = CHAR; strcpy(type,"char");}
     | FLOAT                     {current = FLOAT; strcpy(type,"float");}
@@ -108,12 +107,12 @@ args
     | arg
     ;
 
-arg 
+arg
     : datatype IDENTIFIER
     ;
 
 comp_statement
-    : '{' statements '}' 
+    : '{' statements '}'
     ;
 
 statements
@@ -134,7 +133,7 @@ stmt
     | fn_call ';'
     | RETURN ';'
 	| CONTINUE ';'
-    | BREAK ';'         
+    | BREAK ';'
     | RETURN kt_expr ';'
     ;
 
@@ -169,21 +168,21 @@ assignment_expr
 
 assign_op
     : '='
-    | ADDASSIGN  
-    | SUBTRACTASSIGN 
-    | MULASSIGN 
-    | DIVIDEASSIGN 
-    | MODASSIGN 
+    | ADDASSIGN
+    | SUBTRACTASSIGN
+    | MULASSIGN
+    | DIVIDEASSIGN
+    | MODASSIGN
     ;
 
 kt_expr
     : kt_expr EQUAL kt_expr
-    | kt_expr NOTEQUAL kt_expr 
-    | kt_expr '<' kt_expr   
-    | kt_expr '>' kt_expr   
+    | kt_expr NOTEQUAL kt_expr
+    | kt_expr '<' kt_expr
+    | kt_expr '>' kt_expr
     | kt_expr GREATEREQUAL kt_expr
-    | kt_expr LESSEREQUAL kt_expr 
-    | kt_expr LOGICALAND kt_expr 
+    | kt_expr LESSEREQUAL kt_expr
+    | kt_expr LOGICALAND kt_expr
     | kt_expr LOGICALOR kt_expr
     | '!' kt_expr
     | arithmetic_expr
@@ -200,7 +199,7 @@ arithmetic_expr
     | arithmetic_expr '%' arithmetic_expr
     | '-' arithmetic_expr %prec UNARY
     | IDENTIFIER
-    | constant  
+    | constant
 	| FLOATCONSTANT     {insert(constant_table, $1, FLOATCONSTANT, "float");}
     ;
 
@@ -215,7 +214,7 @@ string
 	;
 
 unary_expr
-    : IDENTIFIER INCREMENT    
+    : IDENTIFIER INCREMENT
     | IDENTIFIER DECREMENT
     | DECREMENT IDENTIFIER
     | INCREMENT IDENTIFIER
@@ -223,8 +222,8 @@ unary_expr
 
 
 fn_call
-    : IDENTIFIER '(' parameters ')'     
-    | IDENTIFIER '(' ')' 
+    : IDENTIFIER '(' parameters ')'
+    | IDENTIFIER '(' ')'
     ;
 
 parameters
@@ -249,7 +248,7 @@ if_stmt
     ;
 
 while_stmt
-    : WHILE '(' expression ')' statement 
+    : WHILE '(' expression ')' statement
     ;
 
 for_expr
@@ -259,7 +258,7 @@ for_expr
 
 for_stmt
     : FOR '(' for_expr for_expr expression ')' statement
-    | FOR '(' for_expr for_expr ')' statement 
+    | FOR '(' for_expr for_expr ')' statement
     ;
 
 %%

@@ -1,8 +1,9 @@
 /* A Bison parser, made by GNU Bison 3.5.2.  */
 
-/* Skeleton interface for Bison GLR parsers in C
+/* Bison interface for Yacc-like parsers in C
 
-   Copyright (C) 2002-2015, 2018-2020 Free Software Foundation, Inc.
+   Copyright (C) 1984, 1989-1990, 2000-2015, 2018-2020 Free Software Foundation,
+   Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -29,6 +30,9 @@
 
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
+
+/* Undocumented macros, especially those whose name start with YY_,
+   are private implementation details.  Do not rely on them.  */
 
 #ifndef YY_YY_Y_TAB_H_INCLUDED
 # define YY_YY_Y_TAB_H_INCLUDED
@@ -90,16 +94,61 @@ extern int yydebug;
     UNARY = 300
   };
 #endif
+/* Tokens.  */
+#define IDENTIFIER 258
+#define HEADERFILE 259
+#define INT 260
+#define CHAR 261
+#define FLOAT 262
+#define SIGNED 263
+#define UNSIGNED 264
+#define SHORT 265
+#define LONG 266
+#define LONGLONG 267
+#define CONST 268
+#define ENUM 269
+#define VOID 270
+#define RETURN 271
+#define IF 272
+#define WHIL 273
+#define ELSE 274
+#define FOR 275
+#define WHILE 276
+#define BREAK 277
+#define CONTINUE 278
+#define HEXCONSTANT 279
+#define DECIMALCONSTANT 280
+#define FLOATCONSTANT 281
+#define CHARCONSTANT 282
+#define STR 283
+#define INCREMENT 284
+#define DECREMENT 285
+#define EQUAL 286
+#define NOTEQUAL 287
+#define GREATEREQUAL 288
+#define LESSEREQUAL 289
+#define LOGICALAND 290
+#define LOGICALOR 291
+#define ADDASSIGN 292
+#define SUBTRACTASSIGN 293
+#define MULASSIGN 294
+#define DIVIDEASSIGN 295
+#define MODASSIGN 296
+#define LOGICAL_OR 297
+#define LOGICAL_AND 298
+#define NO_ELSE 299
+#define UNARY 300
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 20 "parser.y"
+#line 19 "parser.y"
 
-    char* node;
+    int data_type;
+    char* str;
 
-#line 103 "y.tab.h"
+#line 152 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
