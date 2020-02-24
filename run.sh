@@ -2,7 +2,7 @@
 lex lexicalAnalyzer.l
 yacc -d syntaxAnalyzer.y
 gcc lex.yy.c y.tab.c -w -g
-./a.out input.c
+./a.out test10.c
 rm y.tab.c y.tab.h lex.yy.c a.out
 echo "\n\n===============CONSTANT TABLE==============="
 cat constantTable.txt
