@@ -1,19 +1,13 @@
-/*
- - An All in one test case with all kinds of errors.
-*/
+#include<stdio.h>
+#define NUM 5
 
-/*This should not*/ work */
-/*#include<stdio
-.h>*/
-#include<string.h>
+int main()
+{
+char A[] = "#define MAX 10";
+char B[ ] = "Hello";
+char ch  = 'B';
+unsigned a = 1;
+printf("String = %s Value of Pi = %f", A, 3.14);
 
-int main() {
-
-    int a = 5;
-    char aString[10] = "Hello
-        World";
-    @$
-    char zy = 'ab';
-    a += 5;
-    return 0;
+return 0;
 }

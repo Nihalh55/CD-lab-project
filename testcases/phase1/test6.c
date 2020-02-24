@@ -16,13 +16,12 @@ The output should display appropriate tokens with their type and also the symbol
 
 int main()
 {
-  int x, y;
-  long long int total, diff;
-  int *ptr;
-  float lk = 0.123456;
-  unsigned int a = 0x0f;
-  long int mylong = 123456;
-  long int i, j;
+  int x;
+  int total;
+  int ptr;
+  int a = 0x0f;
+  int mylong = 123456;
+  int i;
   for(i=0; i < 10; i++){
     for(j=10; j > 0; j--){
     printf("%d",i);

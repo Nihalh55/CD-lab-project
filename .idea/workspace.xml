@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75bec6c4-470b-4331-ba7f-f710f8352bc7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deprecated/parserOurs/parser.y" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lexicalAnalyzer.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syntaxAnalyzer.y" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.y" beforeDir="false" afterPath="$PROJECT_DIR$/parser.y" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.h" beforeDir="false" afterPath="$PROJECT_DIR$/table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/token.h" beforeDir="false" afterPath="$PROJECT_DIR$/token.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/parserOurs/compile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lex.yy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.out.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.out.dSYM/Contents/Resources/DWARF/parser.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.y" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner.l" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/parserOurs/scanner.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table.h" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/parserOurs/table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/parserOurs/test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/phase1/test1.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/phase1/test2.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/phase1/test6.c" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/phase1/test6.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token.h" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/parserOurs/token.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/y.output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/y.tab.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/y.tab.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +50,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deprecated/parserOurs" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/testcases/phase1" />
       <recent name="$PROJECT_DIR$/deprecated" />
@@ -47,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579074433172</updated>
-      <workItem from="1582464878076" duration="3948000" />
+      <workItem from="1582464878076" duration="8130000" />
     </task>
     <servers />
   </component>
@@ -68,9 +87,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582516489313">
+    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582521013932">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1582516489313" />
+    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1582521013932" />
   </component>
 </project>

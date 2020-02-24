@@ -1,4 +1,4 @@
 #!/bin/bash
-yacc -d parser.y -v
-lex scanner.l
+yacc -d syntaxAnalyzer.y -v
+lex lexicalAnalyzer.l
 gcc -w -g y.tab.c -ly -ll -o parser.out
