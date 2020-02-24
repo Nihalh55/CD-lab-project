@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75bec6c4-470b-4331-ba7f-f710f8352bc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.y" beforeDir="false" afterPath="$PROJECT_DIR$/parser.y" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/testcases/phase1" />
@@ -41,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579074433172</updated>
-      <workItem from="1582464878076" duration="2293000" />
+      <workItem from="1582464878076" duration="3080000" />
     </task>
     <servers />
   </component>
@@ -62,9 +66,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582469617046">
+    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582516489313">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1582469617046" />
+    <state x="458" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1582516489313" />
   </component>
 </project>

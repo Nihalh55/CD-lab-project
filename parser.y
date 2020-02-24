@@ -86,15 +86,15 @@ sign
     ;
 
 type_specifier 
-    : INT                    {curr_type = INT; strcpy(type,"int")}
-    | CHAR                   {curr_type = CHAR; strcpy(type,"char")}
-    | FLOAT                  {curr_type = FLOAT; strcpy(type,"float")}
-    | LONG                   {curr_type = LONG; strcpy(type,"long")}
-    | SHORT                  {curr_type = SHORT; strcpy(type,"short")}
-    | LONGLONG              {curr_type = LONGLONG; strcpy(type,"long long")}
-    | LONG INT               {curr_type = LONG; strcpy(type,"long")}
-    | SHORT INT              {curr_type = SHORT; strcpy(type,"short")}
-    | LONGLONG INT          {curr_type = LONGLONG; strcpy(type,"long long")}
+    : INT                       {current = INT; strcpy(type,"int");}
+    | CHAR                      {current = CHAR; strcpy(type,"char");}
+    | FLOAT                     {current = FLOAT; strcpy(type,"float");}
+    | LONG                      {current = LONG; strcpy(type,"long");}
+    | SHORT                     {current = SHORT; strcpy(type,"short");}
+    | LONGLONG                  {current = LONGLONG; strcpy(type,"long long");}
+    | LONG INT                  {current = LONG; strcpy(type,"long");}
+    | SHORT INT                 {current = SHORT; strcpy(type,"short");}
+    | LONGLONG INT              {current = LONGLONG; strcpy(type,"long long");}
     ;
 
 arguments
