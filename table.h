@@ -179,14 +179,14 @@ int cpl(node_t* entry, int* list, int m)
 
 	if(m != entry->num_params)
 	{
-		yyerror("Number of parameters and arguments do not match");
+		printf("Number of parameters and arguments do not match");
 	}
 
 	int i;
 	for(i=0; i<m; i++)
 	{
 		if(list[i] != parameter_list[i])
-		yyerror("Parameter and argument types do not match");
+		printf("Parameter and argument types do not match");
 	}
 
 	return 1;
