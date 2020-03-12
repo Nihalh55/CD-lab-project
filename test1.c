@@ -8,8 +8,8 @@ void main()
  	scanf("%d",&b);
  	sum(5, b);
 }
-void sum(int inp1,char inp2){
-	int s=0;
+void sum(int inp1,char inp2)
+	ints=0;
 	s=inp1+inp2;
 	printf("\nSum : %d",s);
 	return ;
